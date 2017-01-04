@@ -1,0 +1,21 @@
+{% load staticfiles %}
+{% block page %}
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="{% static 'css/test.css' %}">
+  </head>
+  <body>
+    <p>HOME PAGE</p>
+    <ul>
+      <li><a href="{% url 'assignment1' %}">Assignment 1</a></li>
+      <li><a href="#news">Assignment 2</a></li>
+      <li><a href="#contact">Assignment 3</a></li>
+    </ul>
+  </body>
+</html>
+
+{% endblock %}

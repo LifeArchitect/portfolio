@@ -15,7 +15,11 @@ Including another URLconf
 """
 from django.conf.urls import url
 from django.contrib import admin
+from portfolio_app import views
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
+    url(r'^$', views.home, name='home'),
+    url(r'^experiences/(?P<id>[0-9]+)/$', views.experiences, name='experiences'),
+    url(r'^assignment1/$', views.assignment1, name='assignment1'),
 ]
